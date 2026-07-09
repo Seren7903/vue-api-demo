@@ -1,0 +1,12 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice", "email": "alice@example.com" },
+    { "id": 2, "name": "Bob", "email": "bob@example.com" },
+    { "id": 3, "name": "Charlie", "email": "charlie@example.com" }
+  ],
+  "posts": [
+    { "id": 1, "title": "Vue 3 入门指南", "author": "Alice", "content": "Vue 3 是 Vue.js 的最新版本，带来了 Composition API、更好的 TypeScript 支持等特性。" },
+    { "id": 2, "title": "JavaScript 异步编程", "author": "Bob", "content": "async/await 让异步代码更易读，配合 Promise 可以优雅地处理并发。" },
+    { "id": 3, "title": "RESTful API 设计", "author": "Charlie", "content": "REST 是一种架构风格，使用 HTTP 方法来表达对资源的操作。" }
+  ]
+}
