@@ -155,7 +155,9 @@ function matchRoute(method, pathname) {
     }
     
     // 匹配动态路由如 /users/123
-    const regex = new RegExp(`^${pPath}$`)
+    // 将路由字符串中的 /\d+ 或 /d+ 替换为 /([0-9]+) 正则捕获组
+    const regexPath = pPath.replace(/\/\\d\+/g, '/([0-9]+)').replace(/\/d\+/g, '/([0-9]+)')
+    const regex = new RegExp(`^${regexPath}$`)
     const match = pathname.match(regex)
     if (match) {
       return { handler, params: match.slice(1) }
