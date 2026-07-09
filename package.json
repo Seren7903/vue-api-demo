@@ -1,0 +1,20 @@
+{
+  "name": "vue-api-demo",
+  "version": "1.0.0",
+  "description": "Vue 3 + Vite 项目，包含 Mock API 接口演示",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "test:api": "node server/test.js"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
